@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}Ads.App NEW AD{% endblock %}
+{% block body %}
+<p class="info">Enter here Ad:</p>
+<form action="" method=post id='text'>
+    <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+    {% if error %}<p class=error><strong>Error:</strong> {{ error }}{% endif %}
+    <input type=text name=title class=desc_input placeholder="title" form="text" size="200" required><br><br>
+    <textarea form="text" placeholder="description" name=desc rows='10' cols="50" style="resize:none"
+              required></textarea><br>
+    <input type=submit value="Add" form="text">
+</form>
+{% endblock %}

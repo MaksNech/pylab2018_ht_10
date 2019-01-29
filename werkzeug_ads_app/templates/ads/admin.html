@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block title %}Ads.App ADMIN{% endblock %}
+{% block body %}
+<p class="info">Admin actions:</p>
+{% if data|length > 0 %}
+<div class='delete_all'>
+    <form action="" method="post">
+        <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+        <input type="hidden" name="del_all" value=True/>
+        <input type="submit" value="Delete all Ads">
+    </form>
+</div>
+{% endif %}
+{%for ad in data%}
+<form action="" method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+    <input type="hidden" name="id" value="{{ad._id}}"/>
+    <p class="desc">{{ ad['title'] }} {{ad.created_at}}</p>
+    <input type="submit" value="Delete Ad">
+    <hr>
+</form>
+{%endfor%}
+{% endblock %}
