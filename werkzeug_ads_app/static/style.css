@@ -1,0 +1,97 @@
+body {
+    background: #E8EFF0;
+    margin: 0;
+    padding: 0;
+}
+
+body,input {
+    font-family: 'Helvetica Neue', Arial,sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.box {
+    width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 1px 4px #BED1D4;
+    border-radius: 2px;
+}
+
+a {
+    color: #11557C;
+}
+
+.app_title {
+    position: inline-block;
+}
+
+.app_title h1 {
+    color: #11557C;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.desc {
+    font-size: 16px;
+}
+
+.created_at {
+    font-size: 12px;
+}
+
+.info {
+    color: #11557C;
+    font-size: 18px;
+}
+
+.delete_all {
+    position: inline-block;
+    padding-left:70%
+}
+
+.error { background: #E8EFF0;
+    padding: 3px 8px;
+    color: #11557C;
+    font-size: 0.9em;
+    border-radius: 2px;
+}
+
+.desc_input {
+    width: 300px;
+}
+
+.topnav {
+    position: inline-block;
+    background-color: #11557C;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+    color: #c4fcd4;
+}
+
+footer {
+    width:100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p{
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff;
+}

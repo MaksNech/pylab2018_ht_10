@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}Ads.App HOME{% endblock %}
+{% block body %}
+<p class="info">Advertisements:</p>
+{%for ad in data%}
+<p class="title"><a href="/{{ad._id}}">{{ ad['title'] }}</a></p>
+<p class="desc">{{ad.desc}}</p>
+<p class="created_at">{{ad.created_at}}</p>
+<hr><br>
+{%endfor%}
+{% endblock %}
