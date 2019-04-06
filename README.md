@@ -1,4 +1,4 @@
-# Home task 10 (Werkzeug Ads App)
+# Werkzeug Ads App
 
 ## 1: Initial Setup
 
